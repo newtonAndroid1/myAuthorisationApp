@@ -6,17 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/myCustomId"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@id/text"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click Me ! 12312312312312"
+        android:text="es air texti"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:letterSpacing="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/teal_200"
+        android:padding="20dp"
+        android:text="alksjdbalksdb"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
-
-
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

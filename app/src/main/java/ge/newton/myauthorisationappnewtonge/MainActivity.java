@@ -19,14 +19,7 @@ public class MainActivity extends AppCompatActivity {
         ourMainButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "First Listener", Toast.LENGTH_LONG).show();
-            }
-        });
-
-        ourMainButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Second Listener", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "HI, THERE !", Toast.LENGTH_LONG).show();
             }
         });
     }
