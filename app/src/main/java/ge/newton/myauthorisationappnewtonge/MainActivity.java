@@ -16,18 +16,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        // ჰერე
         EditText emailEditText = findViewById(R.id.emailAddressID);
         EditText passwordEditText = findViewById(R.id.passwordID);
 
         Button logInButton = findViewById(R.id.loginButton);
 
-        String email = emailEditText.getText().toString();
-        String password = passwordEditText.getText().toString();
-
         logInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String email = emailEditText.getText().toString();
+                String password = passwordEditText.getText().toString();
                 if (email.isEmpty()) {
                     emailEditText.setError("Email is Empty");
                 }
